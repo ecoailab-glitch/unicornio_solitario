@@ -1,0 +1,10 @@
+export const lessonsData = {
+  impactoOng: [
+    { id: 'impact-1', title: 'Introducción a la Teoría del Cambio', duration: '15 min', completed: false, content: 'Aprende qué es una Teoría del Cambio y por qué es fundamental para cualquier proyecto de impacto. Descubre cómo visualizar la cadena causal desde tus actividades hasta el impacto final deseado.' },
+    { id: 'impact-2', title: 'Desarrollando tu Marco Lógico', duration: '25 min', completed: false, content: 'El Marco Lógico es la herramienta que estructura tu proyecto. Te enseñamos a definir objetivos, resultados, actividades e indicadores de forma coherente.' },
+    { id: 'impact-3', title: 'Selección de Indicadores de Impacto (KPIs)', duration: '20 min', completed: false, content: 'No todo lo que se puede contar, cuenta. Aprende a seleccionar KPIs que realmente midan el cambio que estás generando, diferenciando entre indicadores de proceso, de resultado y de impacto.' },
+    { id: 'impact-4', title: 'Fundraising para ONGs: Diversifica tus fuentes', duration: '30 min', completed: false, content: 'Explora las diferentes vías de financiación para proyectos sociales: subvenciones públicas, donantes privados, crowdfunding, alianzas corporativas y modelos de negocio social.' },
+    { id: 'impact-5', title: 'Reporting de Impacto: Comunica tu valor', duration: '15 min', completed: false, content: 'Aprende a construir un informe de impacto que sea transparente, creíble y atractivo para tus stakeholders, utilizando datos y storytelling.' },
+    { id: 'impact-6', title: 'Cómo alinear tu proyecto con los ODS', duration: '10 min', completed: false, content: 'Descubre cómo mapear las actividades y el impacto de tu proyecto con los Objetivos de Desarrollo Sostenible (ODS) de la ONU para aumentar tu relevancia y atractivo.' },
+  ]
+};

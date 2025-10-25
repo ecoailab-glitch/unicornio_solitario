@@ -1,0 +1,63 @@
+
+export const simulatedUsers = {
+  nodo: {
+    id: 'user_nodo_01',
+    nombre: 'Impact Hub',
+    tipo: 'nodo',
+    email: 'nodo@impacthub.net',
+    rolAdicional: 'Partner Estratégico',
+    ciudad: 'Málaga',
+    proyectosImpulsados: 120,
+    totalInvertidoCanalizado: 5200000,
+    beneficioEstimadoProyectado: 850000,
+    estado: 'Activo',
+  },
+  emprendedor: {
+    id: 'user_emprendedor_01',
+    nombre: 'Ana Torres',
+    tipo: 'emprendedor',
+    email: 'ana.torres@example.com',
+    proyectoId: 'proj_3_JLN',
+    proyectoNombre: 'Turismo Regenerativo Costa',
+    agenteIAAsignado: 'Agente IA de Turismo',
+  },
+  mentor: {
+    id: 'user_mentor_01',
+    nombre: 'Carlos Vega',
+    tipo: 'mentor',
+    email: 'carlos.vega@example.com',
+    rolAdicional: 'Mentor Principal en IA',
+    sectoresActivos: ['IA', 'SaaS', 'Fintech'],
+    feedbackRecibido: 'Excelente (4.9/5)',
+    proyectosAsignadosIds: ['proj_1_JLN', 'proj_2_JLN']
+  },
+  inversor: {
+    id: 'user_inversor_01',
+    nombre: 'Inversiones FuturoTech',
+    tipo: 'inversor',
+    email: 'contacto@futurotech.inv',
+    capitalDisponibleRondaDragon: 25000000,
+    participacionesActualesIds: ['proj_2_JLN'],
+    estado: 'Inversor Cualificado',
+  },
+  gran_empresa: {
+    id: 'user_gran_empresa_01',
+    nombre: 'Acciona',
+    tipo: 'gran_empresa',
+    email: 'innovacion@acciona.com',
+    rolAdicional: 'Corporate Venturing',
+    proyectosIncubados: 15,
+    sectoresInteres: ['Energías Renovables', 'Infraestructuras', 'Agua'],
+    estado: 'Activo',
+  },
+  proyecto_social: {
+    id: 'user_proyecto_social_01',
+    nombre: 'Fundación Agua para todos',
+    tipo: 'proyecto_social',
+    email: 'contacto@aguaparatodos.org',
+    rolAdicional: 'ONG',
+    beneficiarios: 15000,
+    odsPrincipales: ['ODS 6: Agua Limpia', 'ODS 11: Ciudades Sostenibles'],
+    estado: 'Activo',
+  }
+};

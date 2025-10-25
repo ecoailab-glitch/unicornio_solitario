@@ -1,0 +1,146 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 263 70% 50%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 263 70% 50%;
+  --radius: 0.75rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: #0f0f23; /* A more subtle dark background */
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+  min-height: 100vh;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #e0e7ff 0%, #a78bfa 50%, #c4b5fd 100%); /* Lighter, more subtle gradient for main titles */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-teal {
+  background: linear-gradient(135deg, #2dd4bf 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(139, 92, 246, 0.05); /* Lighter transparency */
+  backdrop-filter: blur(15px); /* Slightly less blur */
+  border: 1px solid rgba(139, 92, 246, 0.1); /* Subtler border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+.metallic-gradient {
+  background: linear-gradient(135deg, #e5e7eb 0%, #9ca3af 50%, #6b7280 100%);
+}
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from { box-shadow: 0 0 10px rgba(139, 92, 246, 0.2); } /* Softer glow */
+  to { box-shadow: 0 0 20px rgba(139, 92, 246, 0.4); } /* Softer glow */
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(139, 92, 246, 0.2); /* Softer shadow on hover */
+}
+
+.phase-semilla {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.phase-pegaso {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.phase-dragon {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.phase-unicornio {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.metric-card {
+  background-color: #1a1a2e; /* Darker background for metric cards */
+  border-radius: 0.75rem; /* Rounded corners */
+  padding: 1.5rem; /* Padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  transition: all 0.2s ease-in-out;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.role-card {
+  background-color: #1a1a2e; /* Darker background for role cards */
+  border-radius: 0.75rem; /* Rounded corners */
+  padding: 2rem; /* Padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  transition: all 0.2s ease-in-out;
+}
+
+.role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
