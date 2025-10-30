@@ -108,6 +108,7 @@ const Home = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
               Unicornio Solitario
             </h1>
+              
             <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-4xl mx-auto">
               Plataforma avanzada que conecta nodos, emprendedores, mentores e inversores para un futuro de impacto.
             </p>
@@ -293,15 +294,26 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <Button 
-                onClick={() => navigate('/simulador')}
-                className="bg-gradient-to-r from-purple-700 to-pink-700 hover:from-purple-800 hover:to-pink-800 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                🦄 Simular mi Unicornio
-              </Button>
+              
             </motion.div>
           </motion.div>
         </div>
+      </div>
+
+      {/* Botón flotante fijo en el centro inferior */}
+      <div className="fixed bottom-8 left-0 right-0 z-50 flex justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <Button 
+            onClick={() => navigate('/simulador')}
+            className="bg-gradient-to-r from-purple-700 to-pink-700 hover:from-purple-800 hover:to-pink-800 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl backdrop-blur-sm"
+          >
+            🦄 Simular mi Unicornio
+          </Button>
+        </motion.div>
       </div>
     </div>
   );

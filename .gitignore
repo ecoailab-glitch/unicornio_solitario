@@ -1,1 +1,201 @@
-node_modules
+# ====================
+# Node.js / Frontend
+# ====================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+.vite/
+.cache/
+*.local
+
+# ====================
+# Environment variables
+# ====================
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ====================
+# Python / Backend
+# ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+env.bak/
+venv.bak/
+
+# Python package management
+pip-log.txt
+pip-delete-this-directory.txt
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# ====================
+# AI / ML Models (archivos grandes - NO subir a git)
+# ====================
+src/models/model_cache/
+src/services/vector-db/vector_index/
+src/services/model-engine/models/
+*.bin
+*.safetensors
+*.gguf
+*.pth
+*.pt
+*.onnx
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.model
+
+# FAISS indices
+*.index
+*.faiss
+
+# Sentence transformers cache
+.cache/
+sentence-transformers/
+
+# ====================
+# IDE / Editors
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ====================
+# OS Specific
+# ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ====================
+# Logs
+# ====================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# ====================
+# Testing & Coverage
+# ====================
+coverage/
+.nyc_output/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+*.cover
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# ====================
+# Database
+# ====================
+*.dump
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# MongoDB
+data/db/
+
+# ====================
+# Temporal / Cache
+# ====================
+tmp/
+temp/
+*.tmp
+.temp/
+.cache/
+
+# ====================
+# Backup files
+# ====================
+*.bak
+*.backup
+*.old
+*~
+
+# ====================
+# Compiled files
+# ====================
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ====================
+# Archives
+# ====================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
