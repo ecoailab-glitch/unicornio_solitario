@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { SimulatorButton } from '@/components/SimulatorButton';
 import { Button } from '@/components/ui/button';
 import { Building2, Lightbulb, Users, TrendingUp, Sparkles, Rocket, UserCheck, BrainCircuit, FolderHeart, Filter, Globe, HeartHandshake, Building } from 'lucide-react';
 import EcosystemEvolution from '@/components/EcosystemEvolution';
@@ -150,6 +151,15 @@ const Home = () => {
                 </motion.div>
               ))}
             </div>
+          </motion.section>
+
+          <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="mb-16"
+          >
+            <SimulatorButton />
           </motion.section>
 
           <motion.div
