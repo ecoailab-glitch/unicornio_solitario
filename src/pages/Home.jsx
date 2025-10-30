@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { SimulatorButton } from '@/components/SimulatorButton';
 import { Button } from '@/components/ui/button';
 import { Building2, Lightbulb, Users, TrendingUp, Sparkles, Rocket, UserCheck, BrainCircuit, FolderHeart, Filter, Globe, HeartHandshake, Building } from 'lucide-react';
 import EcosystemEvolution from '@/components/EcosystemEvolution';
@@ -151,6 +152,15 @@ const Home = () => {
             </div>
           </motion.section>
 
+          <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="mb-16"
+          >
+            <SimulatorButton />
+          </motion.section>
+
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -288,18 +298,6 @@ const Home = () => {
               })}
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              <Button 
-                onClick={() => navigate('/simulador')}
-                className="bg-gradient-to-r from-purple-700 to-pink-700 hover:from-purple-800 hover:to-pink-800 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                🦄 Simular mi Unicornio
-              </Button>
-            </motion.div>
           </motion.div>
         </div>
       </div>
